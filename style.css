@@ -37,12 +37,13 @@ h2 {
 
 /* Class selector */
 .page-header {
+  background: #ffffff;
   background-color: #ffffff;
   text-align: center;
   padding: 1.5rem 1rem 1.5rem 1rem; /* shorthand padding */
   border-style: solid;
   border-color: #dbe4f0;
-  border-width: 0 0 2px 0; /* longhand border width style combo */
+  border-width: 0 0 2px 0;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -61,6 +62,7 @@ h2 {
   color: #555555;
   text-decoration: none;
   text-align: center;
+  font-size: 1.1em;
 }
 
 /* Child combinator */
@@ -140,6 +142,13 @@ section p {
   border-radius: 6px;
 }
 
+/* More explicit longhand border example */
+.agenda-box {
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+}
+
 /* Grid layout */
 .member-grid {
   display: grid;
@@ -152,8 +161,23 @@ section p {
   padding: 1rem;
   border-style: solid;
   border-color: #c7d7f5;
-  border-width: 1px;
+  border-width: 2pt;
   border-radius: 10px;
+  text-align: center;
+  outline: 0.1cm solid transparent;
+}
+
+/* Nested selector */
+.card {
+  & h3 {
+    color: #24426b;
+    text-align: center;
+  }
+}
+
+/* Safe fallback for nested selector */
+.card h3 {
+  color: #24426b;
   text-align: center;
 }
 
@@ -270,20 +294,14 @@ video {
   padding: 1rem 0.5rem 1rem 0.5rem;
   text-align: center;
   background-color: #ffffff;
-  border-top: 2px solid #dbe4f0;
+  border-top-style: solid;
+  border-top-color: #dbe4f0;
+  border-top-width: 2pt;
 }
 
 /* :has() selector */
 .card:has(img) {
   background-color: color-mix(in srgb, white 88%, lightblue 12%);
-}
-
-/* Nested selector */
-.card {
-  & h3 {
-    color: #24426b;
-    text-align: center;
-  }
 }
 
 /* Media query for responsiveness */
