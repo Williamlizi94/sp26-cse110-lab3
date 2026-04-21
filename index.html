@@ -1,241 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="CSE 110 Lab 2 meeting minutes webpage">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE 110 Team Meeting Minutes</title>
-    <link rel="icon" href="meeting-picture.jpg">
-</head>
-<body>
-    <header id="top">
-        <h1>CSE 110 Team Meeting Minutes</h1>
-        <h2>Brainstorming and Project Planning</h2>
-        <h3>Date: April 13, 2026</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 110 Meeting Minutes</title>
 
-        <nav>
-            <ul>
-                <li><a href="#attendance">Attendance</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#unfinished">Unfinished Business</a></li>
-                <li><a href="#new-business">New Business</a></li>
-                <li><a href="#comments">Comments</a></li>
-                <li><a href="#diagram">Diagram</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#form">Feedback Form</a></li>
-            </ul>
-        </nav>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      .highlight-note {
+        background-color: lightyellow;
+        border-left: 6px solid orange;
+      }
+
+      .internal-style-example {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 id="main-title" style="color: navy;">CSE 110 Meeting Minutes</h1>
+      <p class="subtitle internal-style-example">
+        Team discussion notes, media, action items, and next steps.
+      </p>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new-business">New Business</a></li>
+          <li><a href="#media">Media</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <section id="attendance">
-            <h2>Attendance</h2>
-            <p>The following team members attended the meeting:</p>
-            <ul>
-                <li>William Li</li>
-                <li>Alice Chen</li>
-                <li>Brian Kim</li>
-                <li>Daniel Wu</li>
-                <li>Emma Zhang</li>
-            </ul>
-        </section>
+    <main class="content-wrapper">
+      <section id="attendance" class="card">
+        <h2>Attendance</h2>
+        <p>
+          The following team members were present for the meeting.
+        </p>
 
-        <hr>
+        <div class="member-grid">
+          <div class="member-card">
+            <h3>William</h3>
+            <p>Facilitator</p>
+          </div>
+          <div class="member-card">
+            <h3>Camdyn</h3>
+            <p>Recorder</p>
+          </div>
+          <div class="member-card">
+            <h3>Satyam</h3>
+            <p>Developer</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="agenda">
-            <h2>Agenda</h2>
-            <p>This meeting focused on planning the first phase of the project.</p>
-            <ol>
-                <li>Review progress from the last meeting</li>
-                <li>Discuss project ideas</li>
-                <li>Assign roles</li>
-                <li>Plan the first milestone</li>
-                <li>Choose communication tools</li>
-            </ol>
-        </section>
+      <section id="agenda" class="card highlight-note">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review project progress</li>
+          <li>Discuss pending tasks</li>
+          <li>Plan next steps for lab work</li>
+        </ol>
 
-        <hr>
+        <p data-status="important">
+          This was the main focus of the meeting and guided the rest of the discussion.
+        </p>
+      </section>
 
-        <section id="unfinished">
-            <h2>Unfinished Business</h2>
-            <ul>
-                <li>The team had not finalized the project topic.</li>
-                <li>Some members still needed access to the shared repository.</li>
-                <li>The weekly meeting time had not been confirmed.</li>
-            </ul>
-        </section>
+      <section id="unfinished" class="card">
+        <h2>Unfinished Business</h2>
+        <p>
+          The team reviewed the previous meeting notes and checked which tasks
+          still needed follow-up.
+        </p>
+        <p>
+          We also discussed how to improve documentation and make the workflow
+          easier to follow.
+        </p>
+      </section>
 
-        <hr>
+      <section id="new-business" class="card">
+        <h2>New Business</h2>
+        <div class="flex-group">
+          <div class="flex-box">Create GitHub issues</div>
+          <div class="flex-box">Open pull requests</div>
+          <div class="flex-box">Improve CSS styling</div>
+        </div>
 
-        <section id="new-business">
-            <h2>New Business</h2>
+        <h3>Action Items</h3>
+        <ul>
+          <li>Finalize standup template</li>
+          <li>Complete lab styling checklist</li>
+          <li>Review responsive layout on smaller screens</li>
+        </ul>
 
-            <article>
-                <h3>Project Topic Decision</h3>
-                <p>
-                    The team decided to create a <strong>campus event planning app</strong>.
-                    This app will help students find and organize events on campus.
-                </p>
-            </article>
+        <p class="adjacent-target">
+          This paragraph is used for selector practice.
+        </p>
+        <p>
+          This second paragraph follows the first one and can be styled with a sibling selector.
+        </p>
+      </section>
 
-            <article>
-                <h3>Role Assignment</h3>
-                <ul>
-                    <li>William Li - Team Lead</li>
-                    <li>Alice Chen - Frontend Planning</li>
-                    <li>Brian Kim - Backend Planning</li>
-                    <li>Daniel Wu - Documentation</li>
-                    <li>Emma Zhang - Testing and Notes</li>
-                </ul>
-            </article>
+      <section id="media" class="card">
+        <h2>Meeting Media</h2>
+        <p>
+          Below are the media files collected for the meeting record.
+        </p>
 
-            <article>
-                <h3>Important Notes</h3>
-                <p>
-                    The team agreed that <b>GitHub</b> will be used for version control,
-                    and <em>Discord</em> will be used for communication.
-                </p>
-                <p>
-                    One member suggested adding a <i>calendar feature</i> later.<br>
-                    Another member suggested starting with the simplest version first.
-                </p>
-            </article>
-        </section>
+        <img
+          src="meeting-picture.jpg"
+          alt="Meeting discussion screenshot or team image"
+        />
 
-        <hr>
+        <audio controls src="meeting-audio.mp3"></audio>
 
-        <section id="comments">
-            <h2>Comments / Questions / Concerns</h2>
-            <div>
-                <p>
-                    <span>Alice</span> asked whether the app should support both students and clubs.
-                </p>
-                <p>
-                    <span>Brian</span> suggested using GitHub Issues to track tasks.
-                </p>
-                <p>
-                    <span>Daniel</span> said the team should keep the scope manageable.
-                </p>
-                <p>
-                    <span>Emma</span> recommended updating the meeting notes after every meeting.
-                </p>
-            </div>
+        <video controls src="meeting-video.mp4"></video>
+      </section>
 
-            <details>
-                <summary>Extra Team Reminder</summary>
-                <p>
-                    Everyone should push at least one update before the next meeting.
-                </p>
-            </details>
-        </section>
+      <section id="notes" class="card">
+        <h2>Extra Notes</h2>
+        <p>
+          This page includes examples of external CSS, internal CSS, and inline CSS.
+        </p>
+        <span class="inline-example">Inline-block example</span>
+        <span class="inline-example second-inline">Second inline-block example</span>
 
-        <hr>
+        <div class="position-demo-wrapper">
+          <div class="relative-box">Relative Box</div>
+          <div class="absolute-box">Absolute Box</div>
+        </div>
 
-        <section id="diagram">
-            <h2>Diagrams / Whiteboard Notes</h2>
-            <figure>
-                <img src="meeting-picture.jpg" alt="Meeting diagram or whiteboard notes" width="500">
-                <figcaption>Image presented during the meeting.</figcaption>
-            </figure>
-        </section>
-
-        <hr>
-
-        <section id="media">
-            <h2>Audio and Video Recordings</h2>
-
-            <h3>Audio Recording</h3>
-            <audio controls>
-                <source src="meeting-audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-
-            <h3>Video Recording</h3>
-            <video controls width="500">
-                <source src="meeting-video.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
-        </section>
-
-        <hr>
-
-        <section id="form">
-            <h2>Meeting Feedback Form</h2>
-            <form>
-                <fieldset>
-                    <legend>Share Your Feedback</legend>
-
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </p>
-
-                    <p>
-                        <label for="meeting-date">Meeting Date:</label>
-                        <input type="date" id="meeting-date" name="meeting-date">
-                    </p>
-
-                    <p>Which parts of the meeting did you attend?</p>
-                    <p>
-                        <input type="checkbox" id="brainstorming" name="attendance-part" value="brainstorming">
-                        <label for="brainstorming">Brainstorming</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="planning" name="attendance-part" value="planning">
-                        <label for="planning">Planning</label>
-                    </p>
-
-                    <p>How would you rate the meeting?</p>
-                    <p>
-                        <input type="radio" id="good" name="rating" value="good">
-                        <label for="good">Good</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="average" name="rating" value="average">
-                        <label for="average">Average</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="poor" name="rating" value="poor">
-                        <label for="poor">Poor</label>
-                    </p>
-
-                    <p>
-                        <label for="tool">Preferred communication tool:</label>
-                        <input list="tools" id="tool" name="tool">
-                        <datalist id="tools">
-                            <option value="Discord"></option>
-                            <option value="Slack"></option>
-                            <option value="Email"></option>
-                            <option value="Zoom"></option>
-                        </datalist>
-                    </p>
-
-                    <p>
-                        <label for="role">Select your team role:</label>
-                        <select id="role" name="role">
-                            <option value="leader">Team Lead</option>
-                            <option value="frontend">Frontend</option>
-                            <option value="backend">Backend</option>
-                            <option value="documentation">Documentation</option>
-                            <option value="testing">Testing</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="comments-box">Additional comments:</label><br>
-                        <textarea id="comments-box" name="comments-box" rows="4" cols="40"></textarea>
-                    </p>
-
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-        </section>
+        <p class="hidden-note">This note is intentionally hidden.</p>
+      </section>
     </main>
 
-    <footer>
-        <p>Meeting minutes prepared by William Li.</p>
-        <p>Last updated: April 13, 2026</p>
-        <p><a href="#top">Back to top</a></p>
+    <footer class="page-footer">
+      <p>Created for CSE 110 Lab 3</p>
+      <p><a href="https://williamlizi94.github.io/sp26-cse110-lab3/">Published Site</a></p>
     </footer>
-</body>
+  </body>
 </html>
