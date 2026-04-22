@@ -1,79 +1,58 @@
 # CSE 110 Meeting Minutes
 
-Team discussion notes, media, action items, and next steps.
+## Meeting Information
 
-- [Attendance](#attendance)
-- [Agenda](#agenda)
-- [Unfinished Business](#unfinished-business)
-- [New Business](#new-business)
-- [Media](#meeting-media)
+- **Date:** April 21, 2026
+- **Time:** 7:00 PM
+- **Location / Format:** Online via Zoom
 
-## Attendance
+## Participants
 
-The following team members were present for the meeting.
+- William
+- Camdyn
+- Satyam
+
+## Goals for This Standup
+
+- Share progress since the last meeting
+- Discuss current work for Lab 3
+- Identify blockers or unfinished tasks
+- Decide next steps for the team
+
+## Updates Since Last Meeting
 
 ### William
-Facilitator
+- **What I finished:** Updated the project structure, worked on the markdown content, and checked the GitHub Pages output.
+- **What I am working on next:** Finalizing the standup notes template and reviewing the styling of the page.
+- **Blockers:** Need to double-check that all media files and links display correctly.
 
 ### Camdyn
-Recorder
+- **What I finished:** Helped organize the meeting notes and reviewed the required sections for the lab.
+- **What I am working on next:** Improving the readability of the page content and checking formatting details.
+- **Blockers:** Still deciding whether some sections need more detail.
 
 ### Satyam
-Developer
+- **What I finished:** Worked on CSS updates and checked how the layout looks in the browser.
+- **What I am working on next:** Making sure the page looks consistent and testing the final version before submission.
+- **Blockers:** Minor issues with media display and file paths.
 
-## Agenda
+## Team Discussion
 
-1. Review project progress
-2. Discuss pending tasks
-3. Plan next steps for lab work
+- Reviewed the required sections for the standup notes template.
+- Talked about how to organize the markdown so it looks clean and easy to follow.
+- Discussed GitHub Pages issues, especially image path problems.
+- Agreed to keep the template simple but complete.
 
-This was the main focus of the meeting and guided the rest of the discussion.
+## Action Items
 
-## Unfinished Business
+- [ ] Finalize `standup.md` content — **Assigned to:** William
+- [ ] Verify media files and file paths — **Assigned to:** Satyam
+- [ ] Review formatting and page appearance — **Assigned to:** Camdyn
 
-The team reviewed the previous meeting notes and checked which tasks still needed follow-up.
+## Notes
 
-We also discussed how to improve documentation and make the workflow easier to follow.
-
-## New Business
-
-Create GitHub issues
-
-Open pull requests
-
-Improve CSS styling
-
-### Action Items
-
-- Finalize standup template
-- Complete lab styling checklist
-- Review responsive layout on smaller screens
-
-This paragraph is used for selector practice.
-
-This second paragraph follows the first one and can be styled with a sibling selector.
-
-## Meeting Media
-
-Below are the media files collected for the meeting record.
-
-![Meeting discussion screenshot or team image](meeting-picture.jpg)
-
-<audio controls src="meeting-audio.mp3"></audio>
-
-<video controls width="400" src="meeting-video.mp4"></video>
-
-## Extra Notes
-
-This page includes examples of external CSS, internal CSS, and inline CSS.
-
-Inline-block example  
-Second inline-block example
-
-Relative Box
-
-Absolute Box
-
-This note is intentionally hidden.
+- The team agreed not to copy the sample template directly.
+- The final version should include all important standup sections.
+- The page should be easy to read and ready for submission.
 
 Created for CSE 110 Lab 3
