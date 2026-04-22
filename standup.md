@@ -57,7 +57,11 @@ This second paragraph follows the first one and can be styled with a sibling sel
 
 Below are the media files collected for the meeting record.
 
-![Meeting discussion screenshot or team image](images/meeting.png)
+![Meeting discussion screenshot or team image](meeting-picture.jpg)
+
+<audio controls src="meeting-audio.mp3"></audio>
+
+<video controls width="400" src="meeting-video.mp4"></video>
 
 ## Extra Notes
 
